@@ -1,0 +1,14 @@
+<?php 
+
+$nums = [2,7,11,15];
+$target = 9;
+
+for ($i = 0; $i < count($nums)-1; $i++) :
+    for ($j = $i + 1; $j < count($nums); $j++) :
+        if ($nums[$i] + $nums[$j] == $target) :
+            echo "[$i, $j]";
+        endif;
+    endfor;
+endfor;
+
+    ?>
