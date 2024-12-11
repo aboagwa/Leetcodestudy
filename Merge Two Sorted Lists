@@ -1,0 +1,19 @@
+<?php 
+
+$arr1 = [1,2,4];
+$arr2 = [1,3,4];
+
+$sorted_array = array_merge($arr1,$arr2);
+sort($sorted_array);
+print_r($sorted_array);
+
+echo "<br>";
+
+// foreach($sorted_array as $value):
+//     echo $value;
+// endforeach;
+
+$formated_array = "[".implode(",",$sorted_array)."]";
+echo $formated_array;
+
+?>
