@@ -1,0 +1,19 @@
+<?php
+
+$oct_num = readline();
+$oct_num = "7";
+
+if($oct_num < 0):
+    echo "Invalid octal number! Please enter a positive integer.";
+else:
+$dec_num =  octdec($oct_num);
+echo $dec_num.'<br>';
+
+$bi_num = decbin($dec_num);
+
+echo $bi_num.'<br>';
+endif;
+
+
+
+?>
